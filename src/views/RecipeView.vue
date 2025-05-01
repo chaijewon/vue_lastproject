@@ -7,7 +7,7 @@
           <header class="heading">레시피 목록</header>
           <ul class="nospace clear">
             <li v-for="f,idx,key in recipe_list" :class="idx%4===0?'one_quarter first':'one_quarter'" :key="key">
-              <router-link to="">
+              <router-link :to="{name:'RecipeDetailView',params:{no:f.no}}">
                 <img :src="f.poster" :title="f.title">
               </router-link></li>
           </ul>

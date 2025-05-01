@@ -3,6 +3,7 @@ import FoodView from "@/views/FoodView.vue"
 import RecipeView from "@/views/RecipeView.vue"
 import {createRouter,createWebHistory} from 'vue-router'
 import FoodDetailView from "@/views/FoodDetailView.vue"
+import RecipeDetailView from "@/views/RecipeDetailView.vue"
 
 const routes=[
   {
@@ -24,6 +25,11 @@ const routes=[
     path:'/food/detail/:fno',
     name:'FoodDetailView',
     component:FoodDetailView
+  },
+  {
+    path:'/recipe/detail/:no',
+    name:'RecipeDetailView',
+    component:RecipeDetailView
   }
 
 ]
